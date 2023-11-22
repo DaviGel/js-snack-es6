@@ -3,7 +3,7 @@
 Snack 1
 
 1. Creo un array di oggetti. Questi oggetti sono bibliclette ognuna delle quali ha le seguenti chiavi: nome e peso
-2. Stampo in pagina la bici con peso minore tramite la tecnia destructuring e tramite il template literal.
+2. Stampo in pagina la bici con peso minore tramite la tecnia destructuring e tramite il template literal
 
 Snack 2
 
