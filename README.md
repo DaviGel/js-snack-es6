@@ -2,7 +2,7 @@
 
 Snack 1
 
-1. Creo un array di oggetti. Questi descrivono delle bibliclette da corsa, ognuna delle quali ha le seguenti chiavi: nome e peso
+1. Creo un array di oggetti. Questi oggetti descrivono delle bibliclette da corsa, ognuna delle quali ha le seguenti chiavi: nome e peso
 2. Stampo in pagina la bici con peso minore tramite il destructuring e il template literal
 
 Snack 2
