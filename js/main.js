@@ -93,9 +93,6 @@ const footbalTeams = [
 ];
 
 footbalTeams.forEach((footbalTeam) => {
-  // let { 'punti fatti': points, 'falli subiti': fouls } = footbalTeam;
-  // points = randomNumber();
-  // fouls = randomNumber();
   footbalTeam['punti fatti'] = randomNumber();
   footbalTeam['falli subiti'] = randomNumber();
 });
