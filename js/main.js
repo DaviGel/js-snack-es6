@@ -2,6 +2,10 @@
 
 /* Functions */
 
+function randomNumber() {
+  return Math.floor(Math.random() * 20) + 1;
+}
+
 /* Program */
 
 // Snack 1
@@ -57,3 +61,50 @@ bici.forEach((bicicletta, index) => {
 });
 
 container.innerHTML = `<span>La bici di nome: "${tempName}" pesa ${tempWeight}kg</span>`;
+
+// Snack 3
+
+const footbalTeams = [
+  {
+    nome: 'Palermo',
+    'punti fatti': 0,
+    'falli subiti': 0,
+  },
+  {
+    nome: 'Milan',
+    'punti fatti': 0,
+    'falli subiti': 0,
+  },
+  {
+    nome: 'Juventus',
+    'punti fatti': 0,
+    'falli subiti': 0,
+  },
+  {
+    nome: 'Inter',
+    'punti fatti': 0,
+    'falli subiti': 0,
+  },
+  {
+    nome: 'Roma',
+    'punti fatti': 0,
+    'falli subiti': 0,
+  },
+];
+
+footbalTeams.forEach((footbalTeam) => {
+  // let { 'punti fatti': points, 'falli subiti': fouls } = footbalTeam;
+  // points = randomNumber();
+  // fouls = randomNumber();
+  footbalTeam['punti fatti'] = randomNumber();
+  footbalTeam['falli subiti'] = randomNumber();
+});
+
+console.log(footbalTeams);
+
+const newArrayFT = footbalTeams.map((teams) => {
+  const { nome, 'falli subiti': fouls } = teams;
+  return { nome, fouls };
+});
+
+console.log(newArrayFT);
