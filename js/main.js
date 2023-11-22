@@ -110,7 +110,8 @@ console.log(newArrayFT);
 
 const array = [2, 3, 5, 1, 2, 3, 55, 6, 1, 2, 3, 4, 5, 5, 22];
 
-console.log(arrayReduced(array, 3, 8));
+const newArray = arrayReduced(array, 3, 8);
+console.log(newArray);
 
 // num1 deve essere più piccolo di num2
 function arrayReduced(array, num1, num2) {
