@@ -62,7 +62,7 @@ bici.forEach((bicicletta, index) => {
 
 container.innerHTML = `<span>La bici di nome: "${tempName}" pesa ${tempWeight}kg</span>`;
 
-// Snack 3
+// Snack 2
 
 const footbalTeams = [
   {
@@ -108,3 +108,17 @@ const newArrayFT = footbalTeams.map((teams) => {
 });
 
 console.log(newArrayFT);
+
+// Snack 3
+
+const array = [2, 3, 5, 1, 2, 3, 55, 6, 1, 2, 3, 4, 5, 5, 22];
+
+console.log(arrayReduced(array, 3, 8));
+
+// num1 deve essere più piccolo di num2
+function arrayReduced(array, num1, num2) {
+  const newArray = array.filter((arrayElement, index) => {
+    if (index >= num1 && index <= num2) return arrayElement;
+  });
+  return newArray;
+}
