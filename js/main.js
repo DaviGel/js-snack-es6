@@ -47,8 +47,10 @@ let tempName = '';
 
 bici.forEach((bicicletta, index) => {
   const { nome, peso } = bicicletta;
-  if (index === 0) tempWeight = peso;
-  else if (tempWeight > peso) {
+  if (index === 0) {
+    tempName = nome;
+    tempWeight = peso;
+  } else if (tempWeight > peso) {
     tempName = nome;
     tempWeight = peso;
   }
