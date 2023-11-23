@@ -115,8 +115,5 @@ console.log(newArray);
 
 // num1 deve essere più piccolo di num2
 function arrayReduced(array, num1, num2) {
-  const newArray = array.filter((arrayElement, index) => {
-    if (index >= num1 && index <= num2) return arrayElement;
-  });
-  return newArray;
+  return array.filter((_, index) => index >= num1 && index <= num2);
 }
